@@ -6,7 +6,7 @@
  * @returns {number} the number of degrees C
  */
 function convertToCelsius(fahren) {
-  let celc = (fahren - 32) * (5 / 9);
+  const celc = (fahren - 32) * (5 / 9);
   return celc.toFixed(2);
 }
 /**
@@ -78,3 +78,10 @@ celc = convertToCelsius(fahren);
 output4 = createMessage(fahren, celc);
 console.log(output4);
 alert("Generating a second random degree: " + [output4]);
+
+function onresult(output) {
+  if (output == 1) return (document.getElementById("out1").innerHTML = output1);
+  if (output == 2) return (document.getElementById("out2").innerHTML = output2);
+  if (output == 3) return (document.getElementById("out3").innerHTML = output3);
+  if (output == 4) return (document.getElementById("out4").innerHTML = output4);
+}
