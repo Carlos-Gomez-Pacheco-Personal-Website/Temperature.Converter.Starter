@@ -57,7 +57,7 @@ let fahren = prompt(
 let celc = convertToCelsius(fahren);
 let output1 = createMessage(fahren, celc);
 console.log(output1);
-alert([output1]);
+alert(output1);
 
 fahren = prompt(
   "Lets try that again. enter a number, we will convert that number from fahrenheit to celcius"
@@ -65,7 +65,7 @@ fahren = prompt(
 celc = convertToCelsius(fahren);
 output2 = createMessage(fahren, celc);
 console.log(output2);
-alert([output2]);
+alert(output2);
 
 fahren = rand(110);
 celc = convertToCelsius(fahren);
